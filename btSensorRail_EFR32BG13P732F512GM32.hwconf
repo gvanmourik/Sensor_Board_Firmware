@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="EFR32BG13P732F512GM32" partId="mcu.arm.efr32.bg13.efr32bg13p732f512gm32" contextId="com.silabs.sdk.stack.super:2.5.4._310455071">
+  <mode name="DefaultMode">
+    <property object="CMU" propertyId="ABPeripheral.included" value="true"/>
+    <property object="CMU" propertyId="CMU.BSP_CLK_HFXO_PRESENT.BOOL" value="1"/>
+    <property object="CMU" propertyId="CMU.BSP_CLK_LFXO_PRESENT.BOOL" value="1"/>
+    <property object="DCDC" propertyId="ABPeripheral.included" value="true"/>
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="LED" propertyId="ABPeripheral.included" value="true"/>
+    <property object="LED" propertyId="LED.BSP_LED0.PIN" value="PD13"/>
+    <property object="LED" propertyId="LED.BSP_LED1.PIN" value="PD14"/>
+    <property object="LED" propertyId="LED.BSP_LED2.PIN" value="PD15"/>
+    <property object="LED" propertyId="LED.BSP_LED3.PIN" value="PB13"/>
+    <property object="LED" propertyId="LED.BSP_LED_COUNT.INT" value="4"/>
+    <property object="PA" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.cts" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.tx" value="Enabled"/>
+    <property object="SERIAL" propertyId="ABPeripheral.included" value="true"/>
+    <property object="SERIAL" propertyId="SERIAL.BSP_SERIAL_APP_PORT.MOD" value="USART0"/>
+    <property object="UARTNCP" propertyId="UARTNCP.BSP_UARTNCP_USART_PORT.MOD" value="USART0"/>
+    <property object="USART0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="USART0" propertyId="USART.BSP_USART_CTS.PIN" value="PB11"/>
+    <property object="USART0" propertyId="USART.BSP_USART_MISO.PIN" value="PA1"/>
+    <property object="USART0" propertyId="USART.BSP_USART_MOSI.PIN" value="PA0"/>
+    <property object="USART0" propertyId="USART.BSP_USART_RX.PIN" value="PA1"/>
+    <property object="USART0" propertyId="USART.BSP_USART_TX.PIN" value="PA0"/>
+    <property object="USART0" propertyId="USART.customname.STRING" value="ESP32"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>
